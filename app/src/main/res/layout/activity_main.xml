@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorSaffron" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorGreen" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_ashoka_chakra"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_ashok_chakra"
+        android:tint="@color/colorNavyBlue" />
+
+    <LinearLayout
+        android:id="@+id/lin_lay_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_ashoka_chakra"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Happy"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="Independence"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="right"
+            android:text="Day"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/signature"
+        layout="@layout/banner_signature" />
+</RelativeLayout>

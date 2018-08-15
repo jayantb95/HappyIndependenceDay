@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorSaffron"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txt_signature_part_one_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signature_part_one"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_signature_heart_registration"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/txt_signature_part_one_registration"
+        android:layout_toRightOf="@id/txt_signature_part_one_registration"
+        android:tint="@android:color/holo_red_dark"
+        android:src="@drawable/ic_heart" />
+
+    <TextView
+        android:id="@+id/txt_signature_part_two_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/img_signature_heart_registration"
+        android:layout_toRightOf="@id/img_signature_heart_registration"
+        android:text="@string/signature_part_two"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</RelativeLayout>
